@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_8bd023">
+
+    <TextView
+        android:id="@+id/tvSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/song_title"
+        app:layout_constraintEnd_toStartOf="@+id/tvArtist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artist"
+        app:layout_constraintEnd_toStartOf="@+id/tvNoOfViews"
+        app:layout_constraintStart_toEndOf="@+id/tvSongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSongTitle" />
+
+    <TextView
+        android:id="@+id/tvNoOfViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_of_views"
+        app:layout_constraintEnd_toStartOf="@+id/tvSongReleaseDate"
+        app:layout_constraintStart_toEndOf="@+id/tvArtist"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtist" />
+
+    <TextView
+        android:id="@+id/tvSongReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNoOfViews"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoOfViews" />
+</androidx.constraintlayout.widget.ConstraintLayout>

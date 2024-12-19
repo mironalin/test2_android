@@ -29,7 +29,10 @@ public class ViewDataActivity extends AppCompatActivity {
 
         songs = dao.getSongs();
 
-        ArrayAdapter<Song> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, songs);
+//        ArrayAdapter<Song> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, songs);
+//        lvSongs.setAdapter(adapter);
+
+        SongAdapter adapter = new SongAdapter(getApplicationContext(), R.layout.lv_songs_row, songs, getLayoutInflater());
         lvSongs.setAdapter(adapter);
 
         btnSort.setOnClickListener(new View.OnClickListener() {
