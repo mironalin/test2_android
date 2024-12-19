@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test2_Sub1</string>
+    <string name="save_data">Save data</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="view_data">View Data</string>
+    <string name="sort">Sort</string>
+</resources>

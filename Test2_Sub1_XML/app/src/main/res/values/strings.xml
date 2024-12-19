@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test2_Sub2_XML</string>
+    <string name="save_data">Save data</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="view_data">View Data</string>
+    <string name="sort">Sort</string>
+    <string name="database_inserted">Database inserted</string>
+</resources>
